@@ -47,8 +47,8 @@ const Name = styled.div`
   justify-content: center;
   a {
     font-size: 1.25rem;
-    font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 700;
+    font-family: "ff-tisa-sans-web-pro",sans-serif;
+    font-style: italic;
     &:hover,
     &:focus {
       color: ${props => props.theme.colors.body_color};
@@ -103,17 +103,24 @@ const Navigation = () => {
       </Name>
       <SocialMedia>
         <a
-          href="https://www.instagram.com/lekoarts.de"
+          href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
+          style={ {display: "none"} }
         >
           <FaInstagram />
         </a>
-        <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+        <a
+          href="https://www.behance.net/lekoarts"
+          style={ {display: "none"} }
+          target="_blank"
+          rel="noopener noreferrer" 
+          aria-label="Behance"
+        >
           <FaBehance />
         </a>
-        <a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+        <a href="https://dribbble.com/samponeill" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
           <FaDribbble />
         </a>
       </SocialMedia>

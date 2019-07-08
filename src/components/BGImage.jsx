@@ -11,6 +11,7 @@ const BGImage = styled.div`
   .gatsby-image-wrapper {
     position: static !important;
     filter: grayscale(100%);
+    opacity: 0.3;
     > div {
       padding-bottom: ${props => (props.single ? '30vw' : '40vw')} !important;
       @media (max-width: ${props => props.theme.breakpoints.m}),

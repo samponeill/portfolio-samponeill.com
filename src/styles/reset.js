@@ -199,6 +199,23 @@ const reset = css`
   [hidden] {
     display: none !important;
   }
+
+  .gatsby-resp-image-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+
+  .gatsby-resp-image-wrapper {
+    display: block;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
 `
 
 export default reset

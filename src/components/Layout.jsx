@@ -1,24 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
-import 'typeface-merriweather'
-import 'typeface-roboto'
 import SEO from './SEO'
 import Navigation from './Navigation'
 import Footer from './Footer'
 import theme from '../../config/theme'
 import reset from '../styles/reset'
+import fonts from '../styles/font-faces'
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  ${fonts}
   html {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "europa",sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "ff-tisa-sans-web-pro",sans-serif;
+    font-style: italic;
   }
   .nav-active {
     color: ${theme.brand.primary} !important;
+  }
+  #gatsby-focus-wrapper .gatsby-resp-image-background-image {
+    padding-bottom: 0;
+    display: none;
   }
 `
 
